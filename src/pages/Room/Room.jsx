@@ -33,6 +33,10 @@ function Room () {
           <NavLink to={'/'}> Home </NavLink>
         </a>
 
+        <a>
+          <NavLink to={'/lesson'}> Lesson</NavLink>
+        </a>
+
           <a href=""></a>
 
         <a>
