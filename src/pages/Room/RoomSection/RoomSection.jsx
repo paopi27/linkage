@@ -60,6 +60,10 @@ function RoomSection() {
     <NavLink to={'/room'}> Room </NavLink>
   </a>
 
+  <a>
+    <NavLink to={'/lesson'}> Lesson </NavLink>
+  </a>
+
     <a href=""></a>
 
   <a>
