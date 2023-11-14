@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  /* background-color: #F9F9F9; */
+  background-color: #dfeef3;
+  padding: 21px 10px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.header a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff4500; /* Start color of the gradient */
+  background: linear-gradient(to right, #ff4500, #79AC78); /* Gradient text color */
+  background-clip: text;
+  -webkit-background-clip: text; /* For better compatibility with some browsers */
+  color: transparent;
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2); /* Text shadow */
+  letter-spacing: 7px;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff4500;
+  }
+  25% {
+    color: #79AC78;
+  }
+  50% {
+    color: #1E90FF;
+  }
+  75% {
+    color: #FFD700;
+  }
+  100% {
+    color: #ff4500;
+  }
+}
+
+.header a:hover {
+  color: #79AC78; /* End color of the gradient on hover */
+}

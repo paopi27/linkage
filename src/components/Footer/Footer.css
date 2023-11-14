@@ -1,0 +1,15 @@
+/* FOOTER */
+
+.footer{
+    padding: 100px;
+    background-color: #427D9D;
+    color: #DDF2FD;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  .footer:hover{
+    background-color: #164863;
+    color: white;
+    transition: 1s;
+  }
