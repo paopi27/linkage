@@ -3,30 +3,28 @@ import './Footer.css'
 
 
 function Footer() {
-  
 
-    return (
-      <>
-         <footer>
-      
-      <section className='footer'>
 
-      <h1>Linkag∃</h1>
+  return (
+    <>
+      <main>
 
-      <br />
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Dignissimos est aliquid eaque beatae qui enim.
-          Provident, unde earum odio libero eos dolores excepturi quasi illo vitae numquam error,
-          tempore laudantium.</p>
-
+        <section className='footer'>
+          <div className="footer-content">
+            <h1>Linkag∃</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos est aliquid eaque beatae qui enim.
+            Provident, unde earum odio libero eos dolores excepturi quasi illo vitae numquam error,
+            tempore laudantium.
+          </div>
+        </section>
+        <div className="copyright-text">
           <p>&copy; {new Date().getFullYear()} Linkag∃</p>
+        </div>
 
-      </section>
+      </main>
+    </>
+  )
+}
 
-        </footer>
-      </>
-    )
-  }
-  
-  export default Footer
+export default Footer

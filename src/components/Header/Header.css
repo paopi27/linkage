@@ -7,7 +7,7 @@
 .header {
   /* background-color: #F9F9F9; */
   background-color: #dfeef3;
-  padding: 21px 10px;
+  padding: 16px 10px;
   border-radius: 1px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -16,7 +16,7 @@
 .header a {
   text-decoration: none;
   display: inline-block;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
   color: #ff4500; /* Start color of the gradient */
   background: linear-gradient(to right, #ff4500, #79AC78); /* Gradient text color */
