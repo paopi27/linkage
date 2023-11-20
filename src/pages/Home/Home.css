@@ -26,6 +26,8 @@
     background-color: #326481;
     box-shadow: 10px 7px 8px 7px rgba(49, 49, 49, 0.5);
     color: whitesmoke;
+
+    transition: all 450ms ease-in-out;
   }
 
   .txt-intro{
@@ -157,8 +159,31 @@
   }
 
   @media (max-width: 999px) {
+    .intro-container{
+      top: 100px;
+      left: 40px;
   
+      width: 550px;
+
+      transition: all 450ms ease-in-out;
+    }
+  
+    .txt-intro{
+      font-size: 0.9rem;
+    }
+
+    .readmore{
+      font-size: 1rem;
+    }
   }
+   
+  @media (max-width: 699px) {
+    .intro-container{
+      top: 70px;
+      left: 15px;
   
-  
-  
+      width: 400px;
+
+      transition: all 450ms ease-in-out;
+    }
+  }
