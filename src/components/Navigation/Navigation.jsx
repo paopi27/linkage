@@ -28,6 +28,9 @@ function Navigation() {
           <NavLink to={'/lesson'} className={location.pathname === '/lesson' ? 'active' : ''}>
             <AiOutlineRead /> Lesson
           </NavLink>
+          <NavLink to={'/forum'} className={location.pathname === '/forum' ? 'active' : ''}>
+            <AiOutlineRead /> Forum
+          </NavLink>
           <NavLink to={'/about'} className={location.pathname === '/about' ? 'active' : ''}>
             <AiOutlineSmile /> About
           </NavLink>

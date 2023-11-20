@@ -18,34 +18,35 @@ import Lesson from './pages/Lesson/Lesson'
 import { Route, Routes } from 'react-router-dom' /* for navigation */
 
 function App() {
-  
+
 
   return (
 
     <>
 
-    <Header/>
+      <Header />
 
-   {/*} <Navigation /> */}
+      {/*} <Navigation /> */}
 
-    <Routes>
+      <Routes>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/room" element={<Room />} />
-          <Route path="/lesson" element={<Lesson />} />
-          <Route path="/roomsection" element={<RoomSection />} />
-
-
-
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/room" element={<Room />} />
+        <Route path="/lesson" element={<Lesson />} />
+        <Route path="/forum" element={<Lesson />} />
+        <Route path="/roomsection" element={<RoomSection />} />
 
 
 
-          <Route path="*" element={<Home/>} />
-    </Routes>
 
-    
+
+
+        <Route path="*" element={<Home />} />
+      </Routes>
+
+
 
     </>
   )
