@@ -1,54 +1,88 @@
-
   *{
     margin: 0;
+    overflow-x: hidden;
   }
 
-  
     /* MAIN SECTION */
   .image-container{
-      text-align: center; 
-      box-shadow: 10px 7px 8px 7px rgba(0,0,0,0.7);
-      display: inline-block;
-     /* margin: 0 100px 0 100px; */
-     margin: 0 7px 0 7px;
+    position: relative;
+    /* margin: 0 100px 0 100px; */
+    margin-top: -80px;
   }
   
-  .intro{
+  .intro-container{
+    position: relative;
+    top: 150px;
+    left: 100px;
+
+    width: 600px;
     margin: 0 28px 0 28px;
+    padding: 25px 0px 20px 0px;
+
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
-      padding-top: 25px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background-color: #427D9D;
-      box-shadow: 10px 7px 8px 7px rgba(0,0,0,0.7);
-      color: whitesmoke;
-      text-align: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #326481;
+    box-shadow: 10px 7px 8px 7px rgba(49, 49, 49, 0.5);
+    color: whitesmoke;
+
+    transition: all 450ms ease-in-out;
   }
 
   .txt-intro{
-    margin: 5px 100px 5px 100px;
+    margin: 5px 25px 5px 25px;
     padding: 7px;
+
+    font-size: 1rem;
   }
-  
+
+  .intro-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .intro-content{
+    margin: 15px;
+  }
+
+  .intro-btn{
+    display: flex;
+    justify-content: end;
+    margin: 30px 30px 0px 0px;    
+  }
+
+  .btn-light{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .readmore{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+  }
+/*   
   .intro .readmore{
       border: none;
       border-radius: 10px;
+
       color: #164863;
       background-color: #9BBEC8;
+
+      margin: 40px 2px;
       padding: 15px 32px;
+
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      margin: 40px 2px;
+   
       cursor: pointer;
-      box-shadow: 10px 5px 9px rgba(0,0,0,0.3);
   }
   
   .intro .readmore:hover{
       background-color: #164863;
       color: #9BBEC8;
-  }
+  } */
 
 
   /* Tutorial/Lesson----------------------------------------------------------------------------*/
@@ -123,6 +157,33 @@
       flex-basis: 100%;
     }
   }
+
+  @media (max-width: 999px) {
+    .intro-container{
+      top: 100px;
+      left: 40px;
   
+      width: 550px;
+
+      transition: all 450ms ease-in-out;
+    }
   
+    .txt-intro{
+      font-size: 0.9rem;
+    }
+
+    .readmore{
+      font-size: 1rem;
+    }
+  }
+   
+  @media (max-width: 699px) {
+    .intro-container{
+      top: 70px;
+      left: 15px;
   
+      width: 400px;
+
+      transition: all 450ms ease-in-out;
+    }
+  }

@@ -2,11 +2,12 @@ import './Room.css'
 
 import { NavLink } from 'react-router-dom'
 
-import {AiFillCloseCircle, AiOutlineMenu, AiOutlinePlusCircle} from "react-icons/ai";
+import { AiFillCloseCircle, AiOutlineMenu, AiOutlinePlusCircle } from "react-icons/ai";
+import { useState } from "react"; /* for the javascript of sidebar */
 
-import {useState} from "react"; /* for the javascript of sidebar */
+import Navigation from '../../components/Navigation/Navigation';
 
-function Room () {
+function Room() {
 
 
   const [sidebarWidth, setSidebarWidth] = useState('0');
@@ -21,13 +22,15 @@ function Room () {
     setSidebarWidth('0');
     setMainMargin('0');
   };
-  
 
-    return (
-      <>
+
+  return (
+    <>
+      <Navigation />
+
       <div id='mySidebar' className="sidebar" style={{ width: sidebarWidth }}>
 
-      <a href="#" className="closebtn" onClick={closeNav}> <AiFillCloseCircle/> </a>
+        <a href="#" className="closebtn" onClick={closeNav}> <AiFillCloseCircle /> </a>
 
         <a>
           <NavLink to={'/'}> Home </NavLink>
@@ -37,7 +40,7 @@ function Room () {
           <NavLink to={'/lesson'}> Lesson</NavLink>
         </a>
 
-          <a href=""></a>
+        <a href=""></a>
 
         <a>
           <NavLink to={'/public'}> Public</NavLink>
@@ -49,9 +52,9 @@ function Room () {
 
       </div>
 
-        <br />
+      <br />
       <div id="main" style={{ marginLeft: mainMargin }}>
-          <button className="openbtn" onClick={openNav}><AiOutlineMenu /></button>
+        <button className="openbtn" onClick={openNav}><AiOutlineMenu /></button>
         <br />
         <br />
 
@@ -60,29 +63,29 @@ function Room () {
             <h1>WELCOME TO THE CHAT ROOM</h1>
             <br />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Ipsa, veniam! Nihil aliquid, deleniti amet consequatur
-                architecto autem a mollitia ex non placeat laborum
-                 facilis omnis, doloribus ipsa molestias eaque quam?
-                 </p>
+              Ipsa, veniam! Nihil aliquid, deleniti amet consequatur
+              architecto autem a mollitia ex non placeat laborum
+              facilis omnis, doloribus ipsa molestias eaque quam?
+            </p>
           </div>
         </div>
 
         <br />
 
         <div className="rooms">
-        <NavLink to={'/roomsection'}>Enter Room</NavLink>
-        <NavLink to={'/roomsection'}>Enter Room</NavLink>
-        <NavLink to={'/roomsection'}>Enter Room</NavLink>
-        <NavLink to={'/roomsection'}>Enter Room</NavLink>
-        <NavLink to={'/roomsection'} className="make-room-link">
-                              Make a Room <AiOutlinePlusCircle />
-        </NavLink>
+          <NavLink to={'/roomsection'}>Enter Room</NavLink>
+          <NavLink to={'/roomsection'}>Enter Room</NavLink>
+          <NavLink to={'/roomsection'}>Enter Room</NavLink>
+          <NavLink to={'/roomsection'}>Enter Room</NavLink>
+          <NavLink to={'/roomsection'} className="make-room-link">
+            Make a Room <AiOutlinePlusCircle />
+          </NavLink>
         </div>
-    
+
       </div>
-      
-      </>
-    )
-  }
-  
-  export default Room
+
+    </>
+  )
+}
+
+export default Room
