@@ -1,0 +1,118 @@
+.sidebar {
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  background-color: #111;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  padding-top: 60px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a{
+  font-size: 1.2rem;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+
+  background-color: #111;
+  color: white;
+
+  padding: 10px 15px;
+  margin: 10px;
+
+  position: absolute;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.forum-box{
+  padding-left: 50px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-categories{
+  padding: 0px 20px;
+}
+
+.sub-categories {
+  display: flex;
+  justify-content: end;
+
+  margin-right: 30px;
+}
+
+.tags a.active{
+  background-color: #79AC78;
+  color: black;
+  border-top-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.forum-box{
+  margin: 20px;
+  display: block;
+  background-color: white;
+}
+
+.question-list{
+  background-color: white;
+}
+
+.search-bar{
+  display: flex;
+}
+
+.search-icon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  margin-left: -10px;
+}
+
+.tags{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 300px;
+  margin: 20px 0px;
+}
+
+.ask-button{
+  background-color: rgb(153, 153, 153);
+  color: black;
+
+  margin-bottom: 15px;
+}
+
+.post-box{
+  outline: solid black;
+
+  margin: 30px 50px 10px 50px;
+  padding: 30px;
+}
