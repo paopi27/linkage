@@ -6,6 +6,7 @@ import { AiFillCloseCircle, AiOutlineMenu, AiOutlinePlusCircle } from "react-ico
 import { useState } from "react"; /* for the javascript of sidebar */
 
 import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
 
 function Room() {
 
@@ -82,8 +83,9 @@ function Room() {
           </NavLink>
         </div>
 
-      </div>
 
+      </div>
+      <Footer />
     </>
   )
 }

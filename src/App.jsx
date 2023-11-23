@@ -16,6 +16,7 @@ import Lesson from './pages/Lesson/Lesson'
 
 /*import NotFound from './pages/NotFound/NotFound'*/
 import { Route, Routes } from 'react-router-dom' /* for navigation */
+import Forum from './pages/Forum'
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/room" element={<Room />} />
         <Route path="/lesson" element={<Lesson />} />
-        <Route path="/forum" element={<Lesson />} />
+        <Route path="/forum" element={<Forum />} />
         <Route path="/roomsection" element={<RoomSection />} />
 
 
