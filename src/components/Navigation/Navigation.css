@@ -4,13 +4,13 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
+.nav-container{
   background-color: rgb(43, 70, 120);
   display: flex;
   justify-content: center;
 }
 
-.container a{
+.nav-container a{
   display: inline-block;
   text-align: center;
   text-decoration: none;

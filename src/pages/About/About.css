@@ -4,9 +4,7 @@
 
 
 .about-section{
-    margin: 0 15px 0 15px;
     padding: 77px;
-    border-radius: 21px;
     text-align: center;
     background-color: #DDF2FD;
     color: #164863;
@@ -21,7 +19,7 @@
 }
 
 
-.column{
+.member-container{
     float: left;
     width: 25%;
     margin-bottom: 16px;
@@ -50,7 +48,7 @@
     padding: 0 16px;
 }
 
-.box::after, .row::after{
+.box::after, .member::after{
     content: "";
     clear: both;
     display: table;
@@ -78,7 +76,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    .column {
+    .member-container {
       width: 100%;
       display: block;
     }

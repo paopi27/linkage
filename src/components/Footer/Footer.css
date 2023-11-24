@@ -12,6 +12,8 @@ margin-bottom: 20px;
 .footer-content{
   font-size: 0.9rem;
   width: 700px;
+
+  transition: all 450ms ease-in-out;
 }
 
 .footer{
@@ -32,4 +34,22 @@ margin-bottom: 20px;
     font-size: 0.8rem;
     background-color: #000000;
     padding: 5px;
+  }
+
+  @media (max-width: 999px) {
+    .footer-content{
+      font-size: 0.8rem;
+      width: 500px;
+
+      transition: all 450ms ease-in-out;
+    }
+  }
+
+  @media (max-width: 699px) {
+    .footer-content{
+      font-size: 0.7rem;
+      width: 300px;
+
+      transition: all 450ms ease-in-out;
+    }
   }

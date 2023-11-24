@@ -3,7 +3,7 @@ import './styles.css'
 
 import { NavLink } from 'react-router-dom'
 
-import { Row, Col, Container, Button, InputGroup, Form, Tab, Tabs } from 'react-bootstrap';
+import { Row, Col, Container, Button, InputGroup, Form, Card, Tab, Tabs } from 'react-bootstrap';
 
 import { AiFillCloseCircle, AiOutlineMenu, AiOutlinePlusCircle } from "react-icons/ai";
 import { useState } from "react"; /* for the javascript of sidebar */
@@ -59,48 +59,38 @@ const Forum = () => {
         <Container className="forum-box">
           <div className="search-ask">
 
-            <Button variant="link" className="ask-button">Ask a Question</Button>
+            <Button type="submit" className="ask-btn" variant="secondary">Ask a Question</Button>{' '}
 
-            <InputGroup className="mb-3 search-bar">
+            <InputGroup className="mb-3">
               <Form.Control
-                placeholder="Recipient's username"
-                aria-label="Recipient's username"
+                placeholder="Search"
+                aria-label="Search"
                 aria-describedby="basic-addon2"
+                className=" search-bar"
               />
               <Button variant="outline-secondary" id="button-addon2" className="search-icon">
                 S
               </Button>
             </InputGroup>
           </div>
-          <div className="tags">
-            <NavLink to={'/'} className={location.pathname === '/' ? 'active' : ''}>
-              Tag 1
-            </NavLink>
-            <NavLink to={'/room'} className={location.pathname === '/room' ? 'active' : ''}>
-              Tag 2
-            </NavLink>
-            <NavLink to={'/lesson'} className={location.pathname === '/lesson' ? 'active' : ''}>
-              Tag 3
-            </NavLink>
-            <NavLink to={'/forum'} className={location.pathname === '/forum' ? 'active' : ''}>
-              Tag 4
-            </NavLink>
-            <NavLink to={'/about'} className={location.pathname === '/about' ? 'active' : ''}>
-              Tag 5
-            </NavLink>
-          </div>
+
 
           <Container className="question-list">
             <Col>
-              <Row className="post-box">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              </Row>
-              <Row className="post-box">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              </Row>
-              <Row className="post-box">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              </Row>
+              {Array.from({ length: 4 }).map((_, idx) => (
+                <Row key={idx} className="post-box">
+                  <Card style={{ width: '50rem' }} className="post-box">
+                    <Card.Body>
+                      <Card.Title>Author Name</Card.Title>
+                      <Card.Text>
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Row>
+              ))}
             </Col>
           </Container>
         </Container>
