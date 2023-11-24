@@ -40,17 +40,17 @@
   margin: 10px;
 
   position: absolute;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .openbtn:hover {
   background-color: #444;
 }
 
-.forum-box{
-  padding-left: 50px;
-}
-
-.question {
+.question-list {
   display: flex;
   justify-content: center;
 }
@@ -59,11 +59,15 @@
   padding: 0px 20px;
 }
 
-.sub-categories {
-  display: flex;
-  justify-content: end;
+.forum-box{
+  margin-top: 40px;
+}
 
-  margin-right: 30px;
+.question{
+  padding-left: 20px;
+}
+.sub-categories{
+  padding-left: 40px;
 }
 
 .tags a.active{
@@ -72,47 +76,15 @@
   border-top-left-radius: 21px;
   border-bottom-right-radius: 21px;
 }
-
-.forum-box{
-  margin: 20px;
-  display: block;
-  background-color: white;
-}
-
-.question-list{
-  background-color: white;
-}
-
-.search-bar{
-  display: flex;
-}
-
-.search-icon{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  margin-left: -10px;
-}
-
-.tags{
-  display: flex;
-  justify-content: space-between;
-
-  padding: 0px 300px;
-  margin: 20px 0px;
-}
-
-.ask-button{
-  background-color: rgb(153, 153, 153);
-  color: black;
-
+.ask-btn{
   margin-bottom: 15px;
 }
 
 .post-box{
-  outline: solid black;
+  box-shadow: none;
 
-  margin: 30px 50px 10px 50px;
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+
+  margin: 20px;
 }

@@ -11,7 +11,7 @@ function Navigation() {
 
   return (
     <>
-      <Container>
+      <div className="nav-container">
         {/* For the Logo and Logo name */}
         {/* <div className="logo">
           <NavLink to={'/'}>
@@ -38,7 +38,7 @@ function Navigation() {
             <AiOutlineUser /> Account
           </NavLink>
         </div>
-      </Container>
+      </div>
     </>
   )
 }

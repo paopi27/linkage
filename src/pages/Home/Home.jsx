@@ -10,27 +10,27 @@ import randomPic2 from '../../assets/pictures/TREESUNSET.png'
 import { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router-dom' /* for navigation */
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import { AiOutlineFileSearch, AiOutlineRead, AiOutlineMessage } from "react-icons/ai";
 
 function Home() {
 
 
-  const [myIndex, setMyIndex] = useState(0);
-  useEffect(() => {
-    const carousel = () => {
-      const x = document.getElementsByClassName('mySlides');
-      for (let i = 0; i < x.length; i++) {
-        x[i].style.display = 'none';
-      }
-      setMyIndex((prevIndex) => (prevIndex >= x.length - 1 ? 0 : prevIndex + 1));
-      x[myIndex].style.display = 'block';
-    };
-    const slideshowInterval = setInterval(carousel, 3000);
-    return () => {
-      clearInterval(slideshowInterval);
-    };
-  }, [myIndex]);
+  // const [myIndex, setMyIndex] = useState(0);
+  // useEffect(() => {
+  //   const carousel = () => {
+  //     const x = document.getElementsByClassName('mySlides');
+  //     for (let i = 0; i < x.length; i++) {
+  //       x[i].style.display = 'none';
+  //     }
+  //     setMyIndex((prevIndex) => (prevIndex >= x.length - 1 ? 0 : prevIndex + 1));
+  //     x[myIndex].style.display = 'block';
+  //   };
+  //   const slideshowInterval = setInterval(carousel, 3000);
+  //   return () => {
+  //     clearInterval(slideshowInterval);
+  //   };
+  // }, [myIndex]);
 
   return (
     <>
@@ -46,7 +46,24 @@ function Home() {
           margin: 'auto',
           opacity: 0.8
         }}>
-          <div className="intro-container">
+          <Card className="intro-container">
+            <Card.Body>
+              <Card.Title className="intro-title">
+                Linkag∃ Navigating the Real Analysis Frontier
+                - A Collaborative Learning Hub
+              </Card.Title>
+              <Card.Text className="intro-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nihil quidem cupiditate ipsam. Quisquam officiis aut,
+                debitis incidunt, deserunt atque quo rerum cumque,
+                vitae soluta nihil ducimus!
+                Molestias enim dignissimos assumenda!
+              </Card.Text>
+              <Button variant="primary" className="intro-btn">Read More</Button>
+            </Card.Body>
+          </Card>
+
+          {/* <div className="intro-container">
             <div className='txt-intro'>
               <div className="intro-title">
                 <h1>Linkag∃</h1>
@@ -67,10 +84,10 @@ function Home() {
                 </Button>{' '}
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <img className='mySlides' src={coverPic} style={{ width: '100%', maxWidth: '100%', margin: 'auto', display: 'block' }} /> */}
-        </div>
+        </div >
 
         <div className="rooms-container">
           <div className="room-objects">
@@ -90,7 +107,7 @@ function Home() {
           </div>
         </div>
 
-      </main>
+      </main >
 
 
       <Footer />
