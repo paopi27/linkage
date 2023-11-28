@@ -4,9 +4,9 @@ import Navigation from '../../components/Navigation/Navigation'
 
 import Footer from '../../components/Footer/Footer'
 
-import coverPic from '../../assets/pictures/Cover.png'
-import randomPic1 from '../../assets/pictures/ELIB.png'
-import randomPic2 from '../../assets/pictures/TREESUNSET.png'
+import coverPic from '../../assets/pictures/home-cover.jpg'
+import randomPic1 from '../../assets/pictures/stack-book.jpg'
+import randomPic2 from '../../assets/pictures/room-cover.jpg'
 import { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router-dom' /* for navigation */
@@ -59,7 +59,7 @@ function Home() {
                 vitae soluta nihil ducimus!
                 Molestias enim dignissimos assumenda!
               </Card.Text>
-              <Button variant="primary" className="intro-btn">Read More</Button>
+              <Button className="intro-btn">Read More</Button>
             </Card.Body>
           </Card>
 
@@ -94,7 +94,7 @@ function Home() {
             <img src={randomPic1} alt="Room Image 1" />
             <div className="room-content">
               <a><NavLink to={'/lesson'} ><AiOutlineRead /> Enter Lesson</NavLink></a>
-              <p>Your first room description goes here.</p>
+              <p>Explore the Real Analysis Library</p>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ function Home() {
             <img src={randomPic2} alt="Room Image 2" />
             <div className="room-content">
               <a><NavLink to={'/room'}> <AiOutlineMessage /> Enter Room</NavLink></a>
-              <p>Your second room description goes here.</p>
+              <p>Discourse with your Friends, Strangers, and even AI</p>
             </div>
           </div>
         </div>
