@@ -16,6 +16,7 @@ import Lesson from './pages/Lesson/Lesson'
 
 /*import NotFound from './pages/NotFound/NotFound'*/
 import { Route, Routes } from 'react-router-dom' /* for navigation */
+
 import Forum from './pages/Forum'
 
 function App() {
