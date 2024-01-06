@@ -93,7 +93,7 @@ function Home() {
           <div className="room-objects">
             <img src={randomPic1} alt="Room Image 1" />
             <div className="room-content">
-              <a><NavLink to={'/lesson'} ><AiOutlineRead /> Enter Lesson</NavLink></a>
+              <a><NavLink to={'/lesson'} ><AiOutlineRead /> Enter Lessons</NavLink></a>
               <p>Explore the Real Analysis Library</p>
             </div>
           </div>
